@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "427543226010",
+    "project_id": "myanimals-bb087",
+    "storage_bucket": "myanimals-bb087.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427543226010:android:ab82c85330492a98172123",
+        "android_client_info": {
+          "package_name": "com.enric.myanimals"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzelZUkZTY0gkIY2rWHWG-SXNaBzGe3jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427543226010:android:36ff1cf926b02b4e172123",
+        "android_client_info": {
+          "package_name": "com.enric.myanimals.debug"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzelZUkZTY0gkIY2rWHWG-SXNaBzGe3jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

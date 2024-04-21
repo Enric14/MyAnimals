@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.login.LoginFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/fragment_login_iv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/docandcat"
+        android:layout_marginVertical="120dp"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_login_til_user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/roundedimage" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_login_til_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_login_til_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_login_iv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_login_tiet_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fragment_login_tiet_user_txt"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fragment_login_til_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="8dp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_login_til_user">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fragment_login_tiet_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fragment_login_tiet_password_txt"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fragment_login_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:text="@string/fragment_login_tv_one_txt"
+        android:textAppearance="@style/TextAppearance.MyAnimals.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_til_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_login_mb"
+        style="@style/TextAppearance.MyAnimals.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="50dp"
+        android:padding="12dp"
+        android:text="@string/fragment_login_mb_txt"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_tv_one" />
+
+    <TextView
+        android:id="@+id/fragment_login_tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="15dp"
+        android:text="@string/fragment_login_tv_two_txt"
+        android:textAppearance="@style/TextAppearance.MyAnimals.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_mb" />
+
+    <TextView
+        android:id="@+id/fragment_login_tv_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="@string/fragment_login_tv_three_txt"
+        android:textAppearance="@style/TextAppearance.MyAnimals.Body2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_login_tv_two" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

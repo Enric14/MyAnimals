@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addpet.AddPetActivity">
+
+    <ImageView
+        android:id="@+id/activity_add_pet_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_name"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_iv"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_name"
+        style="@style/EditTextForm"
+        android:hint="@string/activity_add_pet_hint_one" />
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_chip"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_chip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_et_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_chip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_chip"
+        style="@style/EditTextForm"
+        android:hint="@string/activity_add_pet_hint_two" />
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_species"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_species"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_et_chip"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_species"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_species"
+        style="@style/EditTextForm"
+        android:hint="@string/activity_add_pet_hint_three" />
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_born_date"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_born_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_et_species"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_born_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_born_date"
+        style="@style/EditTextForm"
+        android:hint="@string/activity_add_pet_hint_four" />
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_breed"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_breed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_et_born_date"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_breed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_breed"
+        style="@style/EditTextForm"
+        android:hint="@string/activity_add_pet_hint_five"/>
+
+    <TextView
+        android:id="@+id/activity_add_pet_tv_image"
+        style="@style/TextAppearance.MyAnimals.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_add_pet_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_add_pet_et_breed"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/activity_add_pet_et_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_tv_image"
+        style="@style/EditTextFormImage"
+        android:hint="@string/activity_add_pet_hint_six"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="numberDecimal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activity_add_pet_cv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_add_pet_et_image"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/activity_add_pet_cv_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/activity_add_pet_pb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/activity_add_pet_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="20dp"
+        android:text="@string/activity_add_pet_btn_txt"
+        android:enabled="false"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

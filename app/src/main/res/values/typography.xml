@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.MyAnimals.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">94sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">59sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">47sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">33sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/noto_sans_bold</item>
+        <item name="android:fontFamily">@font/noto_sans_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.MyAnimals.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/open_sans</item>
+        <item name="android:fontFamily">@font/open_sans</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

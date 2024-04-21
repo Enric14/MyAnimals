@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/item_pet_cl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginVertical="20dp">
+
+        <ImageView
+            android:id="@+id/item_pet_iv"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:padding="3dp"
+            android:background="@drawable/border_item_pet"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_pet_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/item_pet_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/TextAppearance.MyAnimals.Headline5"
+            android:padding="10dp"
+            tools:text = "hola"/>
+
+        <ImageView
+            android:id="@+id/item_pet_iv_delete"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_delete_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/item_pet_go_detail"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/baseline_arrow_outward_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/item_pet_iv_delete"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

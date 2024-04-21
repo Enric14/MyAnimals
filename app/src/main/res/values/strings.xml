@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyAnimals</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_login_tiet_user_txt">Correo electrónico</string>
+    <string name="fragment_login_tiet_password_txt">Contraseña</string>
+    <string name="fragment_login_tv_one_txt">Regístrate</string>
+    <string name="fragment_login_mb_txt">Iniciar Sesión</string>
+    <string name="fragment_login_tv_two_txt">¿Has olvidado tu contraseña?</string>
+    <string name="fragment_login_tv_three_txt">Pulsa aquí para generar una nueva</string>
+    <string name="fragment_login_sign_up_password_one_txt">Escribe una contraseña con un mínimo de 6 caracteres</string>
+    <string name="fragment_sign_up_mb_txt">Registrarse</string>
+    <string name="fragment_password_recovery_tiet_user_txt">Escribe tu correo electrónico</string>
+    <string name="fragment_password_recovery_mb_txt">Enviar correo</string>
+    <string name="menu_log_out_title">Logout</string>
+    <string name="fragment_login_sign_up_password_two_txt">Repite la contraseña</string>
+    <string name="activity_welcome_mb_txt">Adelante</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="menu_add_title">Add</string>
+    <string name="view_animal_iv_txt">Imagen de la mascota</string>
+    <string name="activity_add_pet_name">Nombre</string>
+    <string name="activity_add_pet_chip">Número de chip</string>
+    <string name="activity_add_pet_species">Tipo de animal</string>
+    <string name="activity_add_pet_born_date">Fecha de nacimiento</string>
+    <string name="activity_add_pet_breed">Raza del animal</string>
+    <string name="activity_add_pet_hint_one">Nombre de la mascota</string>
+    <string name="activity_add_pet_hint_two">Número de chip de la mascota</string>
+    <string name="activity_add_pet_hint_three">Tipo de mascota (perro, gato...)</string>
+    <string name="activity_add_pet_hint_four">Fecha de nacimiento de la mascota</string>
+    <string name="activity_add_pet_hint_five">Raza de la mascota</string>
+    <string name="activity_add_pet_image">Imagen</string>
+    <string name="activity_add_pet_hint_six">Imagen de la mascota</string>
+    <string name="activity_add_pet_btn_txt">Añadir mascota</string>
+    <string name="activity_details_pet_btn_txt">Modificar datos</string>
+    <string name="activity_changes_pet_btn_txt">Guardar cambios</string>
+</resources>
