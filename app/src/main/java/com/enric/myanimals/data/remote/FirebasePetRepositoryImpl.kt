@@ -146,19 +146,4 @@ class FirebasePetRepositoryImpl @Inject constructor(
             false
         }
     }
-
-    suspend fun updatePet(pet: Pet): Boolean {
-        val uid = getCurrentUserId() ?: return false
-        return try {
-            firestore.collection(USERS_COLLECTION)
-                .document(uid)
-                .collection(PETS_COLLECTION)
-                .document(pet.id)
-                .set(pet)
-                .await()
-            true
-        } catch (e: Exception) {
-            false
-        }
-    }
 }

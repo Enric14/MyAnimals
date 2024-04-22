@@ -4,16 +4,13 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import com.bumptech.glide.Glide
-import com.enric.myanimals.data.response.PetResponse
 import com.enric.myanimals.databinding.ActivityDetailsBinding
 import com.enric.myanimals.domain.model.Pet
-import com.enric.myanimals.ui.changespet.ChangesActivity
 import com.enric.myanimals.ui.home.HomeActivity
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -51,20 +48,10 @@ class DetailsActivity : AppCompatActivity() {
         binding.activityDetailsPetIv.setOnClickListener {
             navigateToHome()
         }
-        binding.activityDetailsPetBtn.setOnClickListener {
-            navigateToChanges(pet = Pet())
-        }
     }
 
     private fun navigateToHome() {
         startActivity(Intent(this, HomeActivity::class.java).apply {
-            flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-        })
-    }
-
-    private fun navigateToChanges(pet: Pet) {
-        startActivity(Intent(this, ChangesActivity::class.java).apply {
-            putExtra("pet", pet.id)
             flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         })
     }

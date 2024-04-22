@@ -68,7 +68,7 @@ class LoginFragment : Fragment() {
             val password = fragmentLoginTietPassword.text.toString().trim()
 
             if (user.isBlank() || password.isBlank()) {
-                Toast.makeText(context, "Hay que rellenar ambos campos", Toast.LENGTH_SHORT)
+                Toast.makeText(context, "Correo electrónico y/o contraseña vacíos", Toast.LENGTH_SHORT)
                     .show()
             } else {
                 Toast.makeText(requireContext(), "Usuario no registrado", Toast.LENGTH_SHORT)
