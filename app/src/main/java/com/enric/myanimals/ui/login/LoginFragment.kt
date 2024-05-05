@@ -49,18 +49,6 @@ class LoginFragment : Fragment() {
             )
         }
     }
-    private fun emptyFields() {
-        binding.apply {
-            val user = fragmentLoginTietUser.toString().trim()
-            val password = fragmentLoginTietPassword.toString().trim()
-
-            if (user.isEmpty() || password.isEmpty()) {
-                Toast.makeText(context, "Uno o ambos elementos están vacíos", Toast.LENGTH_SHORT).show()
-            }
-        }
-
-
-    }
 
     private fun handleError() {
         binding.apply {
