@@ -48,7 +48,7 @@ class SignUpFragment : Fragment() {
                     ).show()
                     findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
                 },
-                onFailure = {
+                onFailure = { error ->
                     handleError()
                 }
             )
@@ -72,31 +72,51 @@ class SignUpFragment : Fragment() {
     }
 
     private fun handleSignUp() {
-        val email = binding.fragmentSignUpTietUser.text.toString()
-        val password = binding.fragmentSignUpTietPasswordOne.text.toString()
-        val confirmPassword = binding.fragmentSignUpTietPasswordTwo.text.toString()
+        val email = binding.fragmentSignUpTietUser.text.toString().trim()
+        val password = binding.fragmentSignUpTietPasswordOne.text.toString().trim()
+        val confirmPassword = binding.fragmentSignUpTietPasswordTwo.text.toString().trim()
 
-        if (email.isBlank() || password.isBlank() || confirmPassword.isBlank()) {
-            Toast.makeText(
-                requireContext(),
-                "Por favor, completa todos los campos",
-                Toast.LENGTH_SHORT
-            ).show()
-            return
+        when {
+            email.isBlank() || password.isBlank() || confirmPassword.isBlank() -> {
+                Toast.makeText(
+                    requireContext(),
+                    "Debes rellenar todos los campos",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return
+            }
+            !isValidEmail(email) -> {
+                Toast.makeText(
+                    requireContext(),
+                    "El correo electrónico no es válido",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return
+            }
+            password != confirmPassword -> {
+                Toast.makeText(
+                    requireContext(),
+                    "Las contraseñas no coinciden",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return
+            }
+            password.length < 6 -> {
+                Toast.makeText(
+                    requireContext(),
+                    "La contraseña debe tener al menos 6 caracteres",
+                    Toast.LENGTH_SHORT
+                ).show()
+                return
+            }
+            else -> Unit
         }
-
-        if (password != confirmPassword) {
-            Toast.makeText(
-                requireContext(),
-                "Las contraseñas no coinciden",
-                Toast.LENGTH_SHORT
-            ).show()
-            return
-        }
-
         viewModel.signUp(email, password)
     }
 
+    private fun isValidEmail(email: String): Boolean {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
